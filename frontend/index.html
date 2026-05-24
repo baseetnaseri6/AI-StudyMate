@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI StudyMate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="pageLoader" class="page-loader">
+    <div class="page-loader-card">
+      <div class="page-spinner"></div>
+      <h2>AI StudyMate</h2>
+      <p>Preparing your study assistant...</p>
+    </div>
+  </div>
+
+  <main class="app">
+    <section class="card">
+
+      <div class="topbar">
+        <span class="badge">Local AI • Ollama</span>
+        <button type="button" id="themeToggle" class="theme-btn">🌙 Dark</button>
+      </div>
+
+      <div class="header">
+        <h1>AI StudyMate</h1>
+        <p>Upload a PDF and turn it into summaries, quizzes, flashcards, and simple explanations.</p>
+      </div>
+
+      <label class="upload-box" for="pdfFile">
+        <div class="upload-icon"> </div>
+        <div>
+          <h3>Choose your PDF</h3>
+          <p id="fileName">No PDF selected</p>
+        </div>
+      </label>
+
+      <input type="file" id="pdfFile" accept="application/pdf" hidden />
+
+      <div class="task-grid">
+        <button class="task-card active" data-task="Summarize this PDF"> Summary</button>
+        <button class="task-card" data-task="Explain difficult concepts"> Explain</button>
+        <button class="task-card" data-task="Generate quiz questions"> Quiz</button>
+        <button class="task-card" data-task="Create flashcards"> Flashcards</button>
+      </div>
+
+      <button type="button" id="analyzeBtn" class="main-btn">
+        <span id="btnText">Analyze PDF</span>
+        <span id="loader" class="loader hidden"></span>
+      </button>
+
+      <div id="result" class="result empty">
+  Your result will appear here...
+</div>
+
+<div class="chat-section">
+
+  <div class="chat-header">
+    Chat With PDF
+  </div>
+
+  <div id="chatMessages" class="chat-messages">
+    <div class="bot-message">
+      Upload a PDF and ask questions about it.
+    </div>
+  </div>
+
+  <div class="chat-input-area">
+    <input
+      type="text"
+      id="chatInput"
+      placeholder="Ask something about the PDF..."
+    />
+
+    <button id="sendChatBtn">
+      Send
+    </button>
+  </div>
+
+</div>
+
+    </section>
+  </main>
+<div id="customAlert" class="custom-alert hidden">
+  <div class="custom-alert-box">
+    <div class="alert-icon">⚠️</div>
+    <h3>PDF Required</h3>
+    <p id="alertMessage">Please select a PDF file first.</p>
+    <button type="button" id="closeAlert">Okay</button>
+  </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
