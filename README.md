@@ -32,11 +32,17 @@ Modern AI PDF Study Assistant built with:
 
 ## Main UI
 
-Add screenshot here later
+## Main UI
 
----
+<img src="screenshots/home-dark.png" width="1000">
 
-# Installation Guide (Mac)
+<img src="screenshots/home-light.png" width="1000">
+
+<img src="screenshots/load-result.png" width="1000">
+
+<img src="screenshots/chat.png" width="1000">
+
+
 
 ## 1. Clone Repository
 
