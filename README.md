@@ -32,8 +32,6 @@ Modern AI PDF Study Assistant built with:
 
 ## Main UI
 
-## Main UI
-
 <img src="screenshots/home-dark.png" width="1000">
 
 <img src="screenshots/home-light.png" width="1000">
