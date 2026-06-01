@@ -41,7 +41,6 @@ Modern AI PDF Study Assistant built with:
 <img src="screenshots/chat.png" width="1000">
 
 
-
 ## 1. Clone Repository
 
 ```bash
